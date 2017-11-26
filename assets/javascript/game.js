@@ -157,14 +157,20 @@ function nextQuestion(prevResult){
 
 
 //After last question's score is incremented display "Totals"
+//display a button click "Start Over"
 
 
 function showFinal(){
      $('.final').find('.result-answer')("<h3>Total Correct: " + correctAnswers + "</h3>");
      $('.final').find('.result-answer')("<h3>Total Incorrect: " + incorrectAnswers + "</h3>");
      $('.final').find('.result-answer')("<h3>Total Unanswered: " + unanswered + "</h3>");
+     $('.start-over').removeClass("hidden");
+     
+     startTimer(59, $('.time'));
+  	 getNewQuestion(0);
+  	 var correctOption = trivia[currentQuestionIndex].answer;
+  	 $('.question-options').children().eq(correctOption).addClass('option-correct');
 }
-//display a button click "Start Over"
 
 //When "Start Over" button is clicked, reset game without page reload, clear out totals to previous game
 

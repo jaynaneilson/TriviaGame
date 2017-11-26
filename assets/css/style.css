@@ -139,7 +139,7 @@ header h2 {
   margin-bottom: 0px;
 }
 
-.start-button {
+.start-button, .start-over{
   background: #f0f0f0;
   padding: 16px;
   border-radius: 8px;
@@ -192,7 +192,7 @@ header h2 {
   margin: 16px 0px 8px;
 }
 
-.result-answer h3 {
+.result-answer, h3 {
   color: #c95946;
   font-weight: bold;
   font-size: 24px;
