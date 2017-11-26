@@ -1,0 +1,211 @@
+body {
+  font-family: roboto;
+  box-sizing: border-box;
+  text-align: center;
+}
+body.covered {
+  overflow: hidden;
+}
+
+.hidden {
+  display: none !important;
+}
+
+header h1 {
+  font-family: Pacifico;
+  font-size: 48px;
+  margin: 0;
+  color: #cdb373;
+}
+header h2 {
+  text-transform: uppercase;
+  font-weight: 100;
+  letter-spacing: 8px;
+  margin: 10px;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.page-wrap {
+  background: #CFD8DC;
+  padding: 40px;
+}
+
+.content-container {
+  max-width: 840px;
+  background: white;
+  margin: 0px auto;
+  padding: 40px 20px 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.game-container {
+  background: #00ADEF;
+  position: relative;
+  padding: 50px 30px 90%;
+  margin-top: 80px;
+  border-radius: 8px;
+  background-image: url(http://i.ebayimg.com/images/g/6n8AAOSw4CFYvxf8/s-l1600.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.timer-container {
+  width: 112px;
+  height: 110px;
+  background: #D14F3B;
+  border-radius: 50%;
+  position: absolute;
+  top: -56px;
+  left: 50%;
+  margin-left: -56px;
+  background: grey;
+  color: white;
+  font-size: 36px;
+  padding-top: 32px;
+}
+.timer-container .time-label {
+  text-transform: uppercase;
+  font-size: 9px;
+  letter-spacing: 3px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.question-container {
+  -webkit-animation: enter 2s ease-in-out;
+          animation: enter 2s ease-in-out;
+}
+
+@-webkit-keyframes enter {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes enter {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.question-label {
+  padding-top: 40px;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.question-area {
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 50px;
+  font-weight: 100;
+  color: white;
+  font-weight: 100;
+}
+@media(min-width: 480px) {
+  .question-area {
+    font-size: 32px;
+  }
+}
+@media(min-width: 640px) {
+  .question-area {
+    font-size: 42px;
+  }
+}
+.question-options div {
+  display: block;
+  padding: 16px;
+  background: white;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+.question-options div:hover {
+  border: 2px solid #bb3c38;
+  color: #bb3c38;
+}
+.question-options div:last-child {
+  margin-bottom: 0px;
+}
+
+.start-button {
+  background: #f0f0f0;
+  padding: 16px;
+  border-radius: 8px;
+  margin-top: 16px;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+.start-button:hover {
+  border-color: #bb3c38;
+  color: #bb3c38;
+}
+
+.result {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-animation: enter 500ms ease-in-out;
+          animation: enter 500ms ease-in-out;
+}
+
+.result-box {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0px 26px 26px -10px rgba(0, 0, 0, 0.3);
+  margin: 30px;
+}
+
+.result-label {
+  color: rgba(0, 0, 0, 0.54);
+  font-style: italic;
+  letter-spacing: 1px;
+  margin: 16px 0px 8px;
+}
+
+.result-answer h3 {
+  color: #c95946;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+
+.nav-center{
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 15px;
+  color:rgba(0, 0, 0, 0.54);
+}
+
+}
+
+
