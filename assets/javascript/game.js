@@ -74,6 +74,7 @@ function getNewQuestion(i){
       '<div class="option-3">'+ option2 +'</div>'+
     '</div>'+
   '</div>';
+  
   $('.question-container-wrap').html(questionTemplate);
 }
 
@@ -161,11 +162,11 @@ function nextQuestion(prevResult){
 
 
 function showFinal(){
-     $('.final').find('.result-answer')("<h3>Total Correct: " + correctAnswers + "</h3>");
-     $('.final').find('.result-answer')("<h3>Total Incorrect: " + incorrectAnswers + "</h3>");
-     $('.final').find('.result-answer')("<h3>Total Unanswered: " + unanswered + "</h3>");
+     $('.final').find('.result-answer').text("<h3>Total Correct: " + correctAnswers + "</h3>");
+     $('.final').find('.result-answer').text("<h3>Total Incorrect: " + incorrectAnswers + "</h3>");
+     $('.final').find('.result-answer').text("<h3>Total Unanswered: " + unanswered + "</h3>");
      $('.start-over').removeClass("hidden");
-     
+
      startTimer(59, $('.time'));
   	 getNewQuestion(0);
   	 var correctOption = trivia[currentQuestionIndex].answer;
