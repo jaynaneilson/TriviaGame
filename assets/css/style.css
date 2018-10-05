@@ -27,7 +27,7 @@ header h2 {
 }
 
 .page-wrap {
-  background: #CFD8DC;
+  /* background: #CFD8DC; */
   padding: 40px;
 }
 
@@ -55,7 +55,6 @@ header h2 {
 .timer-container {
   width: 112px;
   height: 110px;
-  background: #D14F3B;
   border-radius: 50%;
   position: absolute;
   top: -56px;
@@ -132,8 +131,8 @@ header h2 {
   border: 2px solid transparent;
 }
 .question-options div:hover {
-  border: 2px solid #bb3c38;
-  color: #bb3c38;
+  border: 2px solid #ec507c;
+  color: #ec507c;
 }
 .question-options div:last-child {
   margin-bottom: 0px;
@@ -148,8 +147,8 @@ header h2 {
   cursor: pointer;
 }
 .start-button:hover {
-  border-color: #bb3c38;
-  color: #bb3c38;
+  border-color: #ec507c;
+  color: #ec507c;
 }
 
 .result {
@@ -193,7 +192,8 @@ header h2 {
 }
 
 .result-answer, h3 {
-  color: #c95946;
+  color: 
+  #ec507c;
   font-weight: bold;
   font-size: 24px;
 }
@@ -204,8 +204,6 @@ header h2 {
   font-family: 'Roboto', sans-serif;
   margin-top: 15px;
   color:rgba(0, 0, 0, 0.54);
-}
-
 }
 
 
